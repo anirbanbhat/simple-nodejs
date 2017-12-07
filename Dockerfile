@@ -34,7 +34,7 @@ copy package.json package.json
 
 # - then it needs to run 'npm install' to install dependencies from that file
 # - to keep it clean and small, run 'npm cache clean' after above
-RUN npm install && npm cache clean
+RUN npm install
 
 # - then it needs to copy in all files from current directory
 COPY . .
